@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>calculadora</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://use.fontawesome.com/e7d4e48d54.js"></script>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/calculos.js"></script>
+         </head>
+    <body>
+
+      
+
+    
+
+      <div class="calculadora-conteiner">
+        
+        
+
+        <div class="titulo">
+          <h5>
+            Calculo de Salario do Funcionario
+          </h5>
+          <div>
+            <i class="fa fa-calculator fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        
+        
+        <div class="interior-container">
+
+          <div class="input-container-meu">
+            <label for="Name" class="label-formatation">Nome</label>
+
+          <div class="input-container" >
+            <input type="text" id="nome" class="input-field input-formatation" name="nome">
+          </div>
+          </div>
+
+          <div class="input-container-meu">
+            <label for="Name"  class="label-formatation">Valor Hora</label>
+
+          <div class="input-container" >
+            <input type="number" id="valorHora" class="input-field input-formatation" name="valorHora">
+          </div>
+          </div>
+
+          <div class="input-container-meu">
+            <label for="Name" class="label-formatation">Horas Trabalhadas</label>
+
+          <div class="input-container" >
+            <input type="number" id="horasTrabalhadas" class="input-field input-formatation" name="horasTrabalhadas">
+          </div>
+          </div>
+
+          <div class="input-container-meu">
+            <label for="Name" class="label-formatation">Salario Bruto</label>
+
+          <div class="input-container" >
+            <input disabled = "true" id="salarioBruto" type="text" class="input-field input-formatation input-monetario"  name="salarioBruto">
+          </div>
+          </div>
+
+          <div class="input-container-meu">
+            <label for="Name" class="label-formatation">valor do IRRF</label>
+
+          <div class="input-container" >
+            <input disabled = "true" id="irrf" type="text" class="input-field input-formatation input-monetario"  name="irrf">
+          </div>
+          </div>
+
+          <div class="input-container-meu">
+            <label for="Name" class="label-formatation">Gratificação</label>
+
+          <div class="input-container" >
+            <input disabled = "true" id="gratificacao" type="text" class="input-field input-formatation input-monetario"  name="gratificacao">
+          </div>
+          </div>
+
+          <div class="input-container-meu">
+            <label for="Name" class="label-formatation">Salario Líquido</label>
+
+          <div class="input-container" >
+            <input disabled = "true"  id="salarioLiquido" type="text" class="input-field input-formatation input-monetario"  name="salarioLiquido">
+          </div>
+          </div>
+          
+          
+          <div>
+
+            <button id="btnLimpar" onclick="Limpar()">Limpar</button>
+            <button id="btnEnviar" onclick="calcular()">Calcular</button>
+
+       
+            <div class="erro-conteiner " id="msg-erro"  >
+              <p class="menssagem-erro">Preencha todos os campos corretamente</p>
+            </div>
+
+            <div class="sucesso-conteiner " id="msg-sucesso"  >
+              <p class="menssagem-erro">Calculo realizado com sucesso</p>
+            </div>
+    
+          </div>
+          
+          </div>
+
+          
+
+        </div>
+
+        
+        
+        
+    </body>
+    
+</html>
